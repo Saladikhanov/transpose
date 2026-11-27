@@ -1,0 +1,33 @@
+{
+  "name": "transpose",
+  "version": "0.0.0",
+  "private": true,
+  "license": "MIT",
+  "type": "module",
+  "packageManager": "pnpm@12.23.0",
+  "engines": {
+    "node": ">=24"
+  },
+  "scripts": {
+    "check": "pnpm run check:format && pnpm run check:size && pnpm run lint:root && turbo run lint typecheck test",
+    "lint:root": "eslint eslint.config.js scripts --max-warnings 0",
+    "check:format": "prettier --check .",
+    "check:size": "node scripts/check-file-size.mjs",
+    "format": "prettier --write .",
+    "lint": "turbo run lint",
+    "typecheck": "turbo run typecheck",
+    "test": "turbo run test"
+  },
+  "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "@types/estree": "^1.0.11",
+    "@types/node": "^26.6.11",
+    "eslint": "^10.15.0",
+    "globals": "^17.14.0",
+    "prettier": "^3.10.1",
+    "turbo": "^2.11.13",
+    "typescript": "^6.0.3",
+    "typescript-eslint": "^8.74.0",
+    "vitest": "^5.1.2"
+  }
+}
