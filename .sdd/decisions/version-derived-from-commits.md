@@ -13,7 +13,7 @@ Commits follow Conventional Commits, and PRs are squash-merged. The project need
 Use release-please on `main`. It reads the commits since the last release, opens a release PR with the next version and `CHANGELOG.md`, and creates the tag and GitHub Release when that PR is merged.
 
 - One version for the whole repository. All packages are private.
-- Start at `0.x`. Before `1.0.0`, a breaking change bumps the minor version.
+- Start at `0.1.0` (`initial-version` in the config). Without it, release-please makes the first release `1.0.0`. Before `1.0.0`, a breaking change bumps the minor version.
 - Release `1.0.0` at public launch, with `release-as` in the config.
 
 ## Alternatives considered
