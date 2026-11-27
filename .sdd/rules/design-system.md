@@ -20,6 +20,7 @@ The reasoning is in [tokens-in-dtcg](../decisions/tokens-in-dtcg.md) and [radix-
 4. Use Radix primitives for behaviour that needs focus, keyboard or ARIA work.
 5. Define variants with `cva`. Consumers see props only, not Tailwind classes.
 6. Give each component an MDX doc, a story per variant and state, and an axe test.
+7. Do not accept `className` or `style` props. Lay out with `Stack`, `Inline` and templates. The reasoning is in [ds-props-only](../decisions/ds-props-only.md).
 
 ## Accent color
 

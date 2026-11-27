@@ -1,0 +1,42 @@
+import { ArgTypes, Canvas, Meta } from '@storybook/addon-docs/blocks';
+import * as ButtonStories from './Button.stories.tsx';
+
+<Meta of={ButtonStories} />
+
+# Button
+
+Use `Button` to start an action on the current screen.
+
+- **Level:** atom
+- **Behaviour:** native `<button>`. The default `type` is `button`, not `submit`.
+
+<Canvas of={ButtonStories.Primary} />
+
+## When to use
+
+- Use `Button` for an action: save, send, delete, open a dialog.
+- Use `variant="primary"` for the main action of a screen.
+- Use `variant="secondary"` for other actions. This is the default.
+- Use `variant="ghost"` for low-priority actions next to other content, for example "Cancel" in a dialog.
+
+## When not to use
+
+- Do not use `Button` to go to another page. Use a link.
+- Do not put two `primary` buttons on one screen.
+
+## Rules
+
+1. Write the label as a verb in sentence case: "Save changes", not "Save Changes" or "OK".
+2. Keep the label short: 1 to 3 words.
+3. Do not disable a button to show that a form is not complete. Show the errors after a submit attempt.
+4. The button is at least 44 × 44 px. Do not make it smaller.
+
+## Accessibility
+
+- Focus is visible: a 3 px ring in `color.focus.ring`, 2 px offset.
+- `Enter` and `Space` start the action.
+- In light mode, the primary button has a darker edge (`color.action.primary-edge`), so its shape is visible on white.
+
+## Props
+
+<ArgTypes of={ButtonStories} />

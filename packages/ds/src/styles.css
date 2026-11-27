@@ -1,0 +1,42 @@
+@import 'tailwindcss';
+@import '@transpose/tokens/tailwind.css';
+@import '@transpose/tokens/tokens.css';
+@import '@fontsource/space-grotesk/500.css';
+@import '@fontsource/space-grotesk/700.css';
+@import '@fontsource-variable/inter';
+
+@layer base {
+  :root,
+  [data-mode='light'] {
+    color-scheme: light;
+  }
+
+  [data-mode='dark'] {
+    color-scheme: dark;
+  }
+
+  :root:not([data-mode]) {
+    color-scheme: light dark;
+  }
+
+  button {
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  body {
+    background-color: var(--color-surface-page);
+    color: var(--color-text-primary);
+    font-family: var(--font-body);
+    font-size: var(--text-body-size);
+    line-height: var(--text-body-leading);
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.01ms !important;
+      transition-duration: 0.01ms !important;
+    }
+  }
+}

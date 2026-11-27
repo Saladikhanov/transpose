@@ -9,7 +9,8 @@ What holds each rule. A rule with "review" has no check yet; add a check when a 
 | TypeScript 1, 4, 7                                   | `tsc --strict`, typescript-eslint `strictTypeChecked` (`no-explicit-any`, `no-unsafe-*`), `noInlineConfig`, `eslint --max-warnings 0` in every package |
 | TypeScript 2, 3                                      | review                                                                                                                                                 |
 | Design system tokens 3, 7                            | token build in `pnpm check`: layer checks and declared contrast pairs (`packages/tokens/src/build/checks.ts`)                                          |
-| Design system components 6                           | axe tests in Storybook test runner (week 1)                                                                                                            |
+| Design system components 6                           | each story runs as a test in Chromium, light and dark, and fails on any axe violation (`packages/ds/vitest.config.ts`)                                 |
+| Design system components 7 (no `className`)          | `Omit<…, 'className' \| 'style'>` in each component's props type; review                                                                               |
 | Design system: accent, contrast pairs                | token build checks `src/contrast-pairs.json` in each mode; accent misuse in components: review                                                         |
 | Design system: quality floor 1, 2, 3, 4              | axe in Storybook tests (week 1), Playwright + axe on `apps/web` (week 2), quality floor eval on generated screens (week 4)                             |
 | Design system: quality floor 7                       | Lighthouse CI CLS budget (week 6)                                                                                                                      |

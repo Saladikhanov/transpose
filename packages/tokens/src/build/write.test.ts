@@ -23,8 +23,10 @@ describe('renderCss', () => {
     expect(css).toContain('--panel-padding: var(--space-4);');
   });
 
-  it('puts only changed values in the dark blocks', () => {
-    expect(css).toContain('[data-mode="dark"] {\n  --color-surface-page: #222831;\n}');
+  it('puts changed values and component tokens in the dark blocks', () => {
+    expect(css).toContain(
+      '[data-mode="dark"] {\n  --color-surface-page: #222831;\n  --panel-padding: var(--space-4);\n}',
+    );
     expect(css).toContain('@media (prefers-color-scheme: dark) {\n  :root:not([data-mode]) {');
   });
 });

@@ -28,6 +28,7 @@ The choice reaches beyond one package, and it is hard to reverse, has non-obviou
 | [model-writes-json-not-code](model-writes-json-not-code.md)     | AI pipeline   |
 | [radix-for-behaviour](radix-for-behaviour.md)                   | Design system |
 | [tokens-in-dtcg](tokens-in-dtcg.md)                             | Design system |
+| [ds-props-only](ds-props-only.md)                               | Design system |
 | [nestjs-api](nestjs-api.md)                                     | Architecture  |
 | [own-sse-events](own-sse-events.md)                             | Architecture  |
 | [ai-calls-table-first](ai-calls-table-first.md)                 | Observability |

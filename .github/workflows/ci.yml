@@ -27,6 +27,12 @@ jobs:
           key: turbo-${{ runner.os }}-${{ github.sha }}
           restore-keys: turbo-${{ runner.os }}-
       - run: pnpm install --frozen-lockfile
+      - uses: actions/cache@v6
+        with:
+          path: ~/.cache/ms-playwright
+          key: playwright-${{ runner.os }}-${{ hashFiles('pnpm-lock.yaml') }}
+      - name: Install Chromium for component tests
+        run: pnpm --filter @transpose/ds exec playwright install --with-deps chromium
       - name: Check changed packages (pull request)
         if: github.event_name == 'pull_request'
         run: pnpm check:affected
