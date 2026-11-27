@@ -18,8 +18,9 @@ Read [.sdd/README.md](.sdd/README.md) first. The rules in [.sdd/rules/](.sdd/rul
 
 ## Commands
 
-| Command        | Does                                         |
-| -------------- | -------------------------------------------- |
-| `pnpm install` | Installs all workspaces                      |
-| `pnpm check`   | Lint, format, types, tests, structure checks |
-| `pnpm dev`     | Runs web and API in dev mode                 |
+| Command               | Does                                                                                       |
+| --------------------- | ------------------------------------------------------------------------------------------ |
+| `pnpm install`        | Installs all workspaces                                                                    |
+| `pnpm check`          | Lint, format, types, tests, structure checks                                               |
+| `pnpm check:affected` | The same gates, but only for packages changed since `main` (CI runs this on pull requests) |
+| `pnpm dev`            | Runs web and API in dev mode                                                               |

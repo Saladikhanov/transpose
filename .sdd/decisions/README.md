@@ -32,3 +32,4 @@ The choice reaches beyond one package, and it is hard to reverse, has non-obviou
 | [own-sse-events](own-sse-events.md)                             | Architecture  |
 | [ai-calls-table-first](ai-calls-table-first.md)                 | Observability |
 | [version-derived-from-commits](version-derived-from-commits.md) | Delivery      |
+| [ci-runs-affected-packages](ci-runs-affected-packages.md)       | Delivery      |
