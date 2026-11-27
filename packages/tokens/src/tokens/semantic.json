@@ -1,0 +1,58 @@
+{
+  "space": {
+    "$type": "dimension",
+    "0": { "$value": "{primitive.space.0}" },
+    "1": { "$value": "{primitive.space.1}" },
+    "2": { "$value": "{primitive.space.2}" },
+    "3": { "$value": "{primitive.space.3}" },
+    "4": { "$value": "{primitive.space.4}" },
+    "6": { "$value": "{primitive.space.6}" },
+    "8": { "$value": "{primitive.space.8}" },
+    "12": { "$value": "{primitive.space.12}" },
+    "16": { "$value": "{primitive.space.16}" }
+  },
+  "size": {
+    "$type": "dimension",
+    "touch-target": { "$value": "{primitive.space.11}" }
+  },
+  "radius": {
+    "$type": "dimension",
+    "sm": { "$value": "{primitive.radius.2}" },
+    "md": { "$value": "{primitive.radius.4}" },
+    "lg": { "$value": "{primitive.radius.8}" },
+    "full": { "$value": "{primitive.radius.full}" }
+  },
+  "font": {
+    "$type": "fontFamily",
+    "heading": { "$value": "{primitive.font-family.space-grotesk}" },
+    "body": { "$value": "{primitive.font-family.inter}" },
+    "mono": { "$value": "{primitive.font-family.mono}" }
+  },
+  "text": {
+    "display": {
+      "size": { "$type": "dimension", "$value": "{primitive.font-size.fluid-3xl}" },
+      "leading": { "$type": "number", "$value": "{primitive.line-height.tight}" }
+    },
+    "title": {
+      "size": { "$type": "dimension", "$value": "{primitive.font-size.fluid-2xl}" },
+      "leading": { "$type": "number", "$value": "{primitive.line-height.snug}" }
+    },
+    "heading": {
+      "size": { "$type": "dimension", "$value": "{primitive.font-size.xl}" },
+      "leading": { "$type": "number", "$value": "{primitive.line-height.normal}" }
+    },
+    "body": {
+      "size": { "$type": "dimension", "$value": "{primitive.font-size.md}" },
+      "leading": { "$type": "number", "$value": "{primitive.line-height.relaxed}" }
+    },
+    "caption": {
+      "size": { "$type": "dimension", "$value": "{primitive.font-size.sm}" },
+      "leading": { "$type": "number", "$value": "{primitive.line-height.caption}" }
+    }
+  },
+  "focus": {
+    "$type": "dimension",
+    "width": { "$value": "{primitive.border-width.3}" },
+    "offset": { "$value": "{primitive.border-width.2}" }
+  }
+}

@@ -11,13 +11,14 @@ Acme DS is the demo design system of Transpose. This file holds its direction, i
 
 ## Default theme
 
-Palette source: Color Hunt `222831 · 393E46 · FFD369 · EEEEEE`. Font: Space Grotesk. Radius: 4 px.
+Palette source: Color Hunt `222831 · 393E46 · FFD369 · EEEEEE`. Fonts: Space Grotesk for headings, Inter for body text. Radius: 4 px.
 
 | Semantic token            | Dark      | Light     |
 | ------------------------- | --------- | --------- |
 | `color.surface.page`      | `#222831` | `#EEEEEE` |
 | `color.surface.raised`    | `#393E46` | `#FFFFFF` |
 | `color.border.default`    | `#4A505A` | `#D6D6D6` |
+| `color.border.control`    | `#A8ADB4` | `#4F5560` |
 | `color.text.primary`      | `#EEEEEE` | `#222831` |
 | `color.text.muted`        | `#A8ADB4` | `#4F5560` |
 | `color.text.accent`       | `#FFD369` | `#8A5F00` |
@@ -43,6 +44,11 @@ Newest last.
 - 2026-11-27: in light mode the progress indicator and the focus ring use `#222831`, not yellow, for the same reason.
 - 2026-11-27: in light mode the yellow button gets a thin darker edge, so its shape stays visible on white.
 
+- 2026-11-27: Space Grotesk for headings only; Inter for body text, because it reads better in forms, tables and long text.
+
+- 2026-11-27: new token `color.border.control` for input borders. `color.border.default` is too light for a control edge in light mode (about 1.4:1 on white); WCAG 1.4.11 asks 3:1 for the edge that identifies a control. `color.border.default` stays for decorative dividers.
+- 2026-11-27: the token build checks 14 declared contrast pairs. All pass in both modes.
+
 ## Open items
 
-- Confirm the default values with the contrast check when the token build exists.
+- None.

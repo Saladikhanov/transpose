@@ -1,0 +1,16 @@
+[
+  { "foreground": "color.text.primary", "background": "color.surface.page", "kind": "text" },
+  { "foreground": "color.text.primary", "background": "color.surface.raised", "kind": "text" },
+  { "foreground": "color.text.muted", "background": "color.surface.page", "kind": "text" },
+  { "foreground": "color.text.muted", "background": "color.surface.raised", "kind": "text" },
+  { "foreground": "color.text.accent", "background": "color.surface.page", "kind": "text" },
+  { "foreground": "color.text.accent", "background": "color.surface.raised", "kind": "text" },
+  { "foreground": "color.feedback.danger", "background": "color.surface.page", "kind": "text" },
+  { "foreground": "color.feedback.danger", "background": "color.surface.raised", "kind": "text" },
+  { "foreground": "color.action.on-primary", "background": "color.action.primary", "kind": "text" },
+  { "foreground": "color.border.control", "background": "color.surface.raised", "kind": "ui" },
+  { "foreground": "color.focus.ring", "background": "color.surface.page", "kind": "ui" },
+  { "foreground": "color.focus.ring", "background": "color.surface.raised", "kind": "ui" },
+  { "foreground": "color.indicator.active", "background": "color.surface.page", "kind": "ui" },
+  { "foreground": "color.indicator.active", "background": "color.surface.raised", "kind": "ui" }
+]

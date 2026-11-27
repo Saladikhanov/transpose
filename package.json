@@ -9,7 +9,7 @@
     "node": ">=24"
   },
   "scripts": {
-    "check": "pnpm run check:format && pnpm run check:size && pnpm run lint:root && turbo run lint typecheck test",
+    "check": "pnpm run check:format && pnpm run check:size && pnpm run lint:root && turbo run build lint typecheck test",
     "lint:root": "eslint eslint.config.js scripts --max-warnings 0",
     "check:format": "prettier --check .",
     "check:size": "node scripts/check-file-size.mjs",
