@@ -3,3 +3,6 @@ dist
 .turbo
 coverage
 .claude/skills
+storybook-static
+CHANGELOG.md
+.release-please-manifest.json

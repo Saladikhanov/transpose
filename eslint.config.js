@@ -4,7 +4,7 @@ import tseslint from 'typescript-eslint';
 import { transposePlugin } from './packages/eslint-plugin/src/index.ts';
 
 export default tseslint.config(
-  { ignores: ['**/dist/**', '**/node_modules/**', '**/.turbo/**'] },
+  { ignores: ['**/dist/**', '**/node_modules/**', '**/.turbo/**', '**/storybook-static/**'] },
   { linterOptions: { noInlineConfig: true, reportUnusedDisableDirectives: 'error' } },
   js.configs.recommended,
   ...tseslint.configs.strictTypeChecked,
@@ -24,6 +24,9 @@ export default tseslint.config(
   },
   { files: ['**/*.js', '**/*.mjs'], ...tseslint.configs.disableTypeChecked },
   { files: ['scripts/**'], languageOptions: { globals: globals.node } },
-  { files: ['**/*.config.{js,ts,mjs}'], rules: { 'no-restricted-syntax': 'off' } },
+  {
+    files: ['**/*.config.{js,ts,mjs}', '**/*.stories.tsx', '**/.storybook/*.{ts,tsx}'],
+    rules: { 'no-restricted-syntax': 'off' },
+  },
   { plugins: { transpose: transposePlugin }, rules: { 'transpose/no-comments': 'error' } },
 );

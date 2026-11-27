@@ -13,20 +13,21 @@ Acme DS is the demo design system of Transpose. This file holds its direction, i
 
 Palette source: Color Hunt `222831 · 393E46 · FFD369 · EEEEEE`. Fonts: Space Grotesk for headings, Inter for body text. Radius: 4 px.
 
-| Semantic token            | Dark      | Light     |
-| ------------------------- | --------- | --------- |
-| `color.surface.page`      | `#222831` | `#EEEEEE` |
-| `color.surface.raised`    | `#393E46` | `#FFFFFF` |
-| `color.border.default`    | `#4A505A` | `#D6D6D6` |
-| `color.border.control`    | `#A8ADB4` | `#4F5560` |
-| `color.text.primary`      | `#EEEEEE` | `#222831` |
-| `color.text.muted`        | `#A8ADB4` | `#4F5560` |
-| `color.text.accent`       | `#FFD369` | `#8A5F00` |
-| `color.action.primary`    | `#FFD369` | `#FFD369` |
-| `color.action.on-primary` | `#222831` | `#222831` |
-| `color.indicator.active`  | `#FFD369` | `#222831` |
-| `color.focus.ring`        | `#FFD369` | `#222831` |
-| `color.feedback.danger`   | `#FF8A80` | `#B3261E` |
+| Semantic token              | Dark      | Light     |
+| --------------------------- | --------- | --------- |
+| `color.surface.page`        | `#222831` | `#EEEEEE` |
+| `color.surface.raised`      | `#393E46` | `#FFFFFF` |
+| `color.border.default`      | `#4A505A` | `#D6D6D6` |
+| `color.border.control`      | `#A8ADB4` | `#4F5560` |
+| `color.text.primary`        | `#EEEEEE` | `#222831` |
+| `color.text.muted`          | `#A8ADB4` | `#4F5560` |
+| `color.text.accent`         | `#FFD369` | `#8A5F00` |
+| `color.action.primary`      | `#FFD369` | `#FFD369` |
+| `color.action.on-primary`   | `#222831` | `#222831` |
+| `color.action.primary-edge` | `#FFD369` | `#8A5F00` |
+| `color.indicator.active`    | `#FFD369` | `#222831` |
+| `color.focus.ring`          | `#FFD369` | `#222831` |
+| `color.feedback.danger`     | `#FF8A80` | `#B3261E` |
 
 These values are a first draft. The contrast check on declared pairs decides.
 
@@ -48,6 +49,8 @@ Newest last.
 
 - 2026-11-27: new token `color.border.control` for input borders. `color.border.default` is too light for a control edge in light mode (about 1.4:1 on white); WCAG 1.4.11 asks 3:1 for the edge that identifies a control. `color.border.default` stays for decorative dividers.
 - 2026-11-27: the token build checks 14 declared contrast pairs. All pass in both modes.
+- 2026-11-27: new token `color.action.primary-edge` for the primary button edge (light: `#8A5F00`). On hover, the edge turns `color.action.on-primary`, so hover adds contrast.
+- 2026-11-27: `color-scheme` follows the mode, so native scrollbars and inputs match dark mode.
 
 ## Open items
 

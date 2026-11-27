@@ -19,11 +19,14 @@ function block(selector: string, tokens: readonly ResolvedToken[], indent = ''):
 /**
  * Renders the CSS variables. Light values apply by default and with `data-mode="light"`.
  * Dark values apply with `data-mode="dark"`, or with no `data-mode` when the device prefers dark.
+ * Dark blocks repeat the component tokens, because a `var()` inside a custom property resolves where it is declared.
  */
 export function renderCss(light: readonly ResolvedToken[], dark: readonly ResolvedToken[]): string {
   const lightValues = new Map(light.map((token) => [token.path, token.value]));
   const darkOnly = emitted(dark).filter(
-    (token) => token.layer === 'semantic' && lightValues.get(token.path) !== token.value,
+    (token) =>
+      token.layer === 'component' ||
+      (token.layer === 'semantic' && lightValues.get(token.path) !== token.value),
   );
   return [
     block(':root,\n[data-mode="light"]', emitted(light)),

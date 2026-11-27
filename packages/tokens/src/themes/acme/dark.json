@@ -16,7 +16,8 @@
     },
     "action": {
       "primary": { "$value": "{primitive.yellow.400}" },
-      "on-primary": { "$value": "{primitive.gray.950}" }
+      "on-primary": { "$value": "{primitive.gray.950}" },
+      "primary-edge": { "$value": "{primitive.yellow.400}" }
     },
     "indicator": { "active": { "$value": "{primitive.yellow.400}" } },
     "focus": { "ring": { "$value": "{primitive.yellow.400}" } },
