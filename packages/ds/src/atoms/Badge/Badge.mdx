@@ -1,0 +1,31 @@
+import { ArgTypes, Canvas, Meta } from '@storybook/addon-docs/blocks';
+import * as Stories from './Badge.stories.tsx';
+
+<Meta of={Stories} />
+
+# Badge
+
+Use `Badge` for a short status or a count next to other content.
+
+- **Level:** atom
+
+<Canvas of={Stories.Neutral} />
+
+## When to use
+
+- Use `tone="neutral"` for most statuses.
+- Use `tone="accent"` for one highlight, for example "Recommended".
+- Use `tone="danger"` for a problem, for example "Overdue".
+
+## When not to use
+
+- Do not make a badge interactive. Use `Button`.
+- Do not write more than 3 words.
+
+## Rules
+
+1. Write badge text in sentence case.
+
+## Props
+
+<ArgTypes of={Stories} />

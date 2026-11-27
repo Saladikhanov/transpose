@@ -23,6 +23,16 @@ const storybookProject = (mode: 'light' | 'dark') => ({
 
 export default defineConfig({
   plugins: [tailwindcss()],
+  optimizeDeps: {
+    include: [
+      'radix-ui',
+      'lucide-react',
+      'class-variance-authority',
+      'react',
+      'react-dom',
+      'react/jsx-dev-runtime',
+    ],
+  },
   test: {
     projects: [
       { extends: true, test: { name: 'unit', environment: 'node', include: ['src/**/*.test.ts'] } },

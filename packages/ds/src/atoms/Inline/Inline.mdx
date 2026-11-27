@@ -1,0 +1,31 @@
+import { ArgTypes, Canvas, Meta } from '@storybook/addon-docs/blocks';
+import * as Stories from './Inline.stories.tsx';
+
+<Meta of={Stories} />
+
+# Inline
+
+Use `Inline` to place items in a row with a token gap. Items wrap to the next line when there is no space.
+
+- **Level:** layout atom
+
+<Canvas of={Stories.Default} />
+
+## When to use
+
+- Use `Inline` for buttons next to each other, badges, or an icon next to text.
+- Use `justify="between"` to push items to the two ends of a row.
+
+## When not to use
+
+- Do not use `Inline` for a column. Use `Stack`.
+- Do not set `wrap={false}` when items can be longer than a phone screen.
+
+## Rules
+
+1. `gap` takes only spacing token steps. The default is `2` (8 px).
+2. The row wraps by default, so the layout works from 320 px.
+
+## Props
+
+<ArgTypes of={Stories} />

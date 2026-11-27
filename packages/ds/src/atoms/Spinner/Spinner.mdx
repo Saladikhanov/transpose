@@ -1,0 +1,31 @@
+import { ArgTypes, Canvas, Meta } from '@storybook/addon-docs/blocks';
+import * as Stories from './Spinner.stories.tsx';
+
+<Meta of={Stories} />
+
+# Spinner
+
+Use `Spinner` to show that something is loading.
+
+- **Level:** atom
+
+<Canvas of={Stories.Default} />
+
+## When to use
+
+- Use a spinner for a wait of about 1 to 10 seconds.
+- Change `label` to say what loads, for example "Saving…".
+
+## When not to use
+
+- Do not use a spinner for a whole page that loads. Show the layout with placeholders.
+- Do not show more than one spinner on a screen.
+
+## Rules
+
+1. Screen readers announce `label` through `role="status"`.
+2. With reduced motion, the spinner does not rotate.
+
+## Props
+
+<ArgTypes of={Stories} />

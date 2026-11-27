@@ -1,0 +1,31 @@
+import { ArgTypes, Canvas, Meta } from '@storybook/addon-docs/blocks';
+import * as Stories from './Icon.stories.tsx';
+
+<Meta of={Stories} />
+
+# Icon
+
+Use `Icon` to show one icon from the allowed set.
+
+- **Level:** atom
+
+<Canvas of={Stories.Decorative} />
+
+## When to use
+
+- Use an icon next to text to make the text faster to scan.
+- Give `label` only when the icon carries meaning that no text next to it gives.
+
+## When not to use
+
+- Do not use an icon alone in a button without an accessible name.
+- Do not ask for an icon that is not in the allowed set. Ask the DS team to add it.
+
+## Rules
+
+1. The allowed set has 43 icons. See the `AllowedSet` story.
+2. Without `label`, the icon has `aria-hidden` and screen readers skip it.
+
+## Props
+
+<ArgTypes of={Stories} />

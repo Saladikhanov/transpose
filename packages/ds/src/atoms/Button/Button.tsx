@@ -1,13 +1,13 @@
 import { cva, type VariantProps } from 'class-variance-authority';
 import type { ComponentPropsWithRef, ReactNode } from 'react';
+import { focusRing } from '../../shared/focus.ts';
 
 const button = cva(
   [
     'inline-flex touch-manipulation items-center justify-center gap-2 border',
     'min-h-(--button-min-height) min-w-(--button-min-height) px-(--button-padding-x) rounded-(--button-radius)',
     'font-body text-body font-medium',
-    'focus-visible:outline-solid focus-visible:outline-(length:--focus-width) focus-visible:outline-focus-ring',
-    'focus-visible:outline-offset-(--focus-offset)',
+    focusRing,
     'disabled:cursor-not-allowed disabled:opacity-60',
   ],
   {
