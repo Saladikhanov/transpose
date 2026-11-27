@@ -1,5 +1,6 @@
 ---
 description: Improve the delivery process from one sentence
+model: opus
 argument-hint: <what went wrong or what could be better>
 ---
 

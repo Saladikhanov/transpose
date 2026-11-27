@@ -18,6 +18,18 @@
 
 Technical work (a Task) starts at `/plan`.
 
+## Models per stage
+
+| Stage                        | Model  |
+| ---------------------------- | ------ |
+| `/spec`, `/plan`, `/improve` | Opus   |
+| `/implement`                 | Sonnet |
+| `reviewer-agent`             | Opus   |
+| `claim-checker`              | Sonnet |
+| `repo-explorer`              | Haiku  |
+
+A plan is ready for `/implement` when a cheaper model can follow it without a new choice. If it cannot, `/implement` stops and the work goes back to `/plan`. The reasoning is in [model-per-stage](decisions/model-per-stage.md).
+
 ## Proportion
 
 |           | Small                             | Normal                                            |

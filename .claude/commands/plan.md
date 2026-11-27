@@ -1,5 +1,6 @@
 ---
 description: Write one agreed plan for a spec or a technical task
+model: opus
 argument-hint: <spec id or task description>
 ---
 

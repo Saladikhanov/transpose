@@ -1,5 +1,6 @@
 ---
 description: Build one agreed plan, with tests, docs and a PR
+model: sonnet
 argument-hint: <plan file>
 ---
 
@@ -19,3 +20,8 @@ Implement the plan: $ARGUMENTS
 12. Write the PR report: what changed, how it is proven, what is not done.
 
 A deviation from the plan is allowed only with the owner's yes. Record it in the plan.
+
+This command runs on a cheaper model than `/plan`. It follows the plan; it does not design.
+
+- If a question comes up that the plan does not answer (a new file, a new dependency, a choice between two approaches, a changed behaviour), stop. Do not decide it. Add the question to the plan's question ledger and tell the owner to run `/plan` again.
+- If a test, a check or an eval fails twice for the same reason, stop and report. Do not change the test or the check to make it pass.
