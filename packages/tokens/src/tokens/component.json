@@ -1,0 +1,18 @@
+{
+  "button": {
+    "radius": { "$type": "dimension", "$value": "{radius.md}" },
+    "padding-x": { "$type": "dimension", "$value": "{space.4}" },
+    "min-height": { "$type": "dimension", "$value": "{size.touch-target}" }
+  },
+  "input": {
+    "radius": { "$type": "dimension", "$value": "{radius.md}" },
+    "padding-x": { "$type": "dimension", "$value": "{space.3}" },
+    "min-height": { "$type": "dimension", "$value": "{size.touch-target}" },
+    "border": { "$type": "color", "$value": "{color.border.control}" }
+  },
+  "panel": {
+    "radius": { "$type": "dimension", "$value": "{radius.md}" },
+    "padding": { "$type": "dimension", "$value": "{space.6}" },
+    "border": { "$type": "color", "$value": "{color.border.default}" }
+  }
+}

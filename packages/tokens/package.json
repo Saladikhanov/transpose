@@ -4,11 +4,19 @@
   "private": true,
   "type": "module",
   "exports": {
-    ".": "./src/index.ts"
+    ".": "./src/index.ts",
+    "./tokens.css": "./dist/tokens.css",
+    "./tailwind.css": "./dist/tailwind.css",
+    "./tokens.json": "./dist/tokens.json",
+    "./names": "./dist/tokens.ts"
   },
   "scripts": {
     "lint": "eslint . --max-warnings 0",
     "typecheck": "tsc -p tsconfig.json",
-    "test": "vitest run"
+    "test": "vitest run",
+    "build": "node src/build/build.ts"
+  },
+  "devDependencies": {
+    "style-dictionary": "^5.8.0"
   }
 }

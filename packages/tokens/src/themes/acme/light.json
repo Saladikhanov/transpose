@@ -1,0 +1,25 @@
+{
+  "color": {
+    "$type": "color",
+    "surface": {
+      "page": { "$value": "{primitive.gray.100}" },
+      "raised": { "$value": "{primitive.gray.0}" }
+    },
+    "border": {
+      "default": { "$value": "{primitive.gray.200}" },
+      "control": { "$value": "{primitive.gray.600}" }
+    },
+    "text": {
+      "primary": { "$value": "{primitive.gray.950}" },
+      "muted": { "$value": "{primitive.gray.600}" },
+      "accent": { "$value": "{primitive.yellow.800}" }
+    },
+    "action": {
+      "primary": { "$value": "{primitive.yellow.400}" },
+      "on-primary": { "$value": "{primitive.gray.950}" }
+    },
+    "indicator": { "active": { "$value": "{primitive.gray.950}" } },
+    "focus": { "ring": { "$value": "{primitive.gray.950}" } },
+    "feedback": { "danger": { "$value": "{primitive.red.700}" } }
+  }
+}
