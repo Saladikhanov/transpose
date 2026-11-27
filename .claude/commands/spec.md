@@ -1,5 +1,6 @@
 ---
 description: Turn a need or a defect into a spec in .sdd/specs/
+model: opus
 argument-hint: <one or more sentences about the need>
 ---
 

@@ -34,3 +34,4 @@ The choice reaches beyond one package, and it is hard to reverse, has non-obviou
 | [ai-calls-table-first](ai-calls-table-first.md)                 | Observability |
 | [version-derived-from-commits](version-derived-from-commits.md) | Delivery      |
 | [ci-runs-affected-packages](ci-runs-affected-packages.md)       | Delivery      |
+| [model-per-stage](model-per-stage.md)                           | Delivery      |
