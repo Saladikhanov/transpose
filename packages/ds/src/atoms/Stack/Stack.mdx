@@ -1,0 +1,31 @@
+import { ArgTypes, Canvas, Meta } from '@storybook/addon-docs/blocks';
+import * as Stories from './Stack.stories.tsx';
+
+<Meta of={Stories} />
+
+# Stack
+
+Use `Stack` to place items in a column with a token gap.
+
+- **Level:** layout atom
+
+<Canvas of={Stories.Default} />
+
+## When to use
+
+- Use `Stack` for a form, a list of sections, or text and actions placed one under another.
+- Use `gap` to set the space. The default is `4` (16 px).
+
+## When not to use
+
+- Do not add space with empty elements. Change `gap`.
+- Do not use `Stack` for a row. Use `Inline`.
+
+## Rules
+
+1. `gap` takes only spacing token steps: `0, 1, 2, 3, 4, 6, 8, 12, 16`.
+2. Use `as="ul"` or `as="ol"` for a real list.
+
+## Props
+
+<ArgTypes of={Stories} />

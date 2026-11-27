@@ -42,7 +42,7 @@ packages/ds/
 Build in 3 PRs, so each one stays reviewable:
 
 1. **Foundation** (done 2026-11-27, PR `feat/ds-foundation`): package, Tailwind, fonts, provider, Storybook, test setup, and **Button** end to end (component, docs, stories, tests).
-2. **Atoms:** the other 10 atoms, Stack and Inline first.
+2. **Atoms** (done 2026-11-27, PR `feat/ds-atoms`): the other 10 atoms, Stack and Inline first.
 3. **Composites:** FormField, Panel, Dialog, Centered.
 
 ## Proof

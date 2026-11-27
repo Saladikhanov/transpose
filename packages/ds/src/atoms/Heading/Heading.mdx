@@ -1,0 +1,31 @@
+import { ArgTypes, Canvas, Meta } from '@storybook/addon-docs/blocks';
+import * as Stories from './Heading.stories.tsx';
+
+<Meta of={Stories} />
+
+# Heading
+
+Use `Heading` for the title of a screen or a section.
+
+- **Level:** atom
+
+<Canvas of={Stories.Title} />
+
+## When to use
+
+- Use `level={1}` once per screen.
+- Use `level` for the document structure and `size` for the look.
+
+## When not to use
+
+- Do not skip levels: after level 1 comes level 2.
+- Do not use `Heading` to make normal text bold. Use `Text weight="medium"`.
+
+## Rules
+
+1. Write headings in sentence case.
+2. Headings use `text-wrap: balance`, so lines have a similar length.
+
+## Props
+
+<ArgTypes of={Stories} />

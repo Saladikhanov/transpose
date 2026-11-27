@@ -51,6 +51,8 @@ Newest last.
 - 2026-11-27: the token build checks 14 declared contrast pairs. All pass in both modes.
 - 2026-11-27: new token `color.action.primary-edge` for the primary button edge (light: `#8A5F00`). On hover, the edge turns `color.action.on-primary`, so hover adds contrast.
 - 2026-11-27: `color-scheme` follows the mode, so native scrollbars and inputs match dark mode.
+- 2026-11-27: a disabled checkbox dims the box only. Its label turns `color.text.muted` instead of 60% opacity, which gave 3.86:1 and failed axe.
+- 2026-11-27: the allowed icon set is 43 Lucide icons, listed in `packages/ds/src/atoms/Icon/icons.ts`. The manifest will list the same names.
 
 ## Open items
 

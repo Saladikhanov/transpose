@@ -1,0 +1,29 @@
+import { ArgTypes, Canvas, Meta } from '@storybook/addon-docs/blocks';
+import * as Stories from './Avatar.stories.tsx';
+
+<Meta of={Stories} />
+
+# Avatar
+
+Use `Avatar` to show a person: their picture, or their initials.
+
+- **Level:** atom
+
+<Canvas of={Stories.Initials} />
+
+## When to use
+
+- Use `Avatar` in lists of people, comments and the account menu.
+
+## When not to use
+
+- Do not use `Avatar` for a company logo or a product image.
+
+## Rules
+
+1. `name` is required. It is the accessible name and the source of the initials.
+2. When the picture does not load, the initials show.
+
+## Props
+
+<ArgTypes of={Stories} />

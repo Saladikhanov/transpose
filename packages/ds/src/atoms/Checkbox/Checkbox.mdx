@@ -1,0 +1,31 @@
+import { ArgTypes, Canvas, Meta } from '@storybook/addon-docs/blocks';
+import * as Stories from './Checkbox.stories.tsx';
+
+<Meta of={Stories} />
+
+# Checkbox
+
+Use `Checkbox` for one yes / no choice with a visible label.
+
+- **Level:** atom
+
+<Canvas of={Stories.Unchecked} />
+
+## When to use
+
+- Use a checkbox for a choice that takes effect after a submit.
+- Use a group of checkboxes when a person can choose more than one item.
+
+## When not to use
+
+- Do not use a checkbox for an action that takes effect at once. Use a switch.
+- Do not use a checkbox without `label`.
+
+## Rules
+
+1. The label and the box share one hit target of at least 44 px.
+2. `Space` toggles the box. Disabled labels use muted text, so they stay readable.
+
+## Props
+
+<ArgTypes of={Stories} />

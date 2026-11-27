@@ -1,0 +1,31 @@
+import { ArgTypes, Canvas, Meta } from '@storybook/addon-docs/blocks';
+import * as Stories from './Input.stories.tsx';
+
+<Meta of={Stories} />
+
+# Input
+
+Use `Input` for one line of text.
+
+- **Level:** atom
+
+<Canvas of={Stories.Default} />
+
+## When to use
+
+- Use the correct `type`: `email`, `tel`, `url`, `password`, `search`, `number`.
+- Set `name` and `autoComplete`, so browsers can fill the field.
+
+## When not to use
+
+- Do not use `Input` without a label. Use `FormField`, or `aria-label` when no visible label fits.
+- Do not use the placeholder as the label.
+
+## Rules
+
+1. Set `invalid` to show an error state. It sets `aria-invalid`.
+2. The field is at least 44 px high.
+
+## Props
+
+<ArgTypes of={Stories} />

@@ -1,0 +1,32 @@
+import { ArgTypes, Canvas, Meta } from '@storybook/addon-docs/blocks';
+import * as Stories from './Text.stories.tsx';
+
+<Meta of={Stories} />
+
+# Text
+
+Use `Text` for body text and captions.
+
+- **Level:** atom
+
+<Canvas of={Stories.Body} />
+
+## When to use
+
+- Use `size="body"` for most text.
+- Use `size="caption"` with `tone="muted"` for hints and metadata.
+- Use `tone="danger"` for error text.
+
+## When not to use
+
+- Do not use `Text` for a heading. Use `Heading`.
+- Do not use color as the only sign of an error. Say what is wrong in the text.
+
+## Rules
+
+1. Long words break to the next line, so text never overflows.
+2. Use `truncate` only when the full text is available another way.
+
+## Props
+
+<ArgTypes of={Stories} />
